@@ -4,7 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: sans-serif;
-    font-size: 14px;    
+    font-size: 14px; 
+  
 }
 
 body{
@@ -17,8 +18,9 @@ body{
 
 .wrapper{
     display: flex;
+    flex-grow: 1;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     width: 60%;
     height: 100vh;
 }
@@ -101,4 +103,48 @@ form{
     color: #3b5998;
     text-decoration: none;
     font-weight: 600;
+}
+
+.forgot{
+    color: #000;
+    text-decoration: nome;
+    font-size: 12px;
+}
+
+.signup{
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+}
+
+.apps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.app-stores{
+
+    display: flex;
+    gap: 10px;
+    margin-top: 20px ;
+}
+
+.app-stores img{
+    width: 140px;
+    height: auto;
+}
+
+@media (max-width: 1024px) {
+    .left {
+        width: 90%;
+    }
+}
+
+@media(max-width: 860px){
+    .left{
+        display: none;
+    }
 }
